@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Jenil — MERN Stack & Flutter Developer. Building beautiful, high-performance web and mobile apps. View my projects, skills, and experience." />
+  <meta name="keywords"
+    content="MERN Developer, Flutter Developer, Full Stack Developer, React Developer, Node.js, MongoDB, Portfolio" />
+  <meta property="og:title" content="Jenil — MERN & Flutter Developer" />
+  <meta property="og:description"
+    content="Full Stack Developer specializing in MERN Stack and Flutter. Check out my projects and get in touch." />
+  <meta property="og:type" content="website" />
+  <title>Jenil — MERN & Flutter Developer Portfolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon (emoji fallback) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+</head>
+
+<body class="bg-gradient-anim">
+
+  <!-- ════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="main-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">&lt;Jenil /&gt;</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-1 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#technologies">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn-primary-glow py-2 px-4 resume-link" href="#" target="_blank" style="font-size:0.88rem;">
+              <i class="bi bi-file-earmark-person"></i> Resume
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════
+       HERO
+  ════════════════════════════════════ -->
+  <section id="hero">
+    <canvas id="particles-canvas"></canvas>
+    <!-- Decorative orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="container">
+      <div class="row align-items-center min-vh-100 py-5">
+
+        <!-- Text -->
+        <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-duration="900">
+          <span class="hero-greeting">👋 Hello World, I'm</span>
+          <h1 class="hero-name">Jenil Kothiya</h1>
+          <p class="hero-role">
+            <span id="typed-role"></span><span id="typed-cursor" class="typed-cursor">|</span>
+          </p>
+          <p class="hero-desc">
+            I craft scalable MERN stack web apps and beautiful Flutter mobile experiences.
+            Passionate about clean code, great design, and turning ideas into reality.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary-glow">
+              <i class="bi bi-rocket-takeoff"></i> View Projects
+            </a>
+            <a href="#contact" class="btn-outline-glow">
+              <i class="bi bi-chat-text"></i> Let's Talk
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-value">
+                <span data-counter="15">0</span>+
+              </div>
+              <div class="hero-stat-label">Projects</div>
+            </div>
+            <div>
+              <div class="hero-stat-value">
+                <span data-counter="2">0</span>+
+              </div>
+              <div class="hero-stat-label">Years Exp.</div>
+            </div>
+            <div>
+              <div class="hero-stat-value">
+                <span data-counter="6">0</span>+
+              </div>
+              <div class="hero-stat-label">Certificates</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="col-lg-6 d-flex justify-content-center mt-5 mt-lg-0" data-aos="fade-left" data-aos-duration="900">
+          <div class="hero-image-wrap">
+            <div class="hero-ring"></div>
+            <div class="hero-ring"></div>
+            <div class="hero-ring"></div>
+            <img src="assets/profile.jpg" alt="Jenil — Developer" class="hero-img" />
+            <div class="hero-badge">
+              <span>✅</span> Open to Work
+            </div>
+            <div class="hero-badge">
+              <span>⚡</span> MERN &amp; Flutter
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+      <div class="scroll-mouse"></div>
+      <span class="scroll-label">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Image -->
+        <div class="col-lg-5 text-center" data-aos="fade-right">
+          <div class="about-img-wrap d-inline-block">
+            <img src="assets/profile.jpg" alt="About Jenil" class="about-img" />
+            <div class="about-img-deco"></div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <span class="section-tag"><i class="bi bi-person-circle"></i> About Me</span>
+          <h2 class="section-title">Crafting Code with <span>Passion & Purpose</span></h2>
+          <div class="divider-line"></div>
+          <p class="about-text" id="about-me-text" style="color:var(--white-dim);line-height:1.9;margin-bottom:14px;">
+          </p>
+          <p class="about-text" id="about-me-text2" style="color:var(--white-dim);line-height:1.9;margin-bottom:24px;">
+          </p>
+
+          <!-- Info Grid -->
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="info-item-label">📍 Location</div>
+              <div class="info-item-value">India</div>
+            </div>
+            <div class="info-item">
+              <div class="info-item-label">💼 Availability</div>
+              <div class="info-item-value" style="color:#34d399;">Open to Work</div>
+            </div>
+            <div class="info-item">
+              <div class="info-item-label">🧑‍💻 Specialization</div>
+              <div class="info-item-value">MERN + Flutter</div>
+            </div>
+            <div class="info-item">
+              <div class="info-item-label">📅 Experience</div>
+              <div class="info-item-value">2+ Years</div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a id="about-github" href="#" target="_blank" rel="noopener" class="social-btn">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+            <a id="about-linkedin" href="#" target="_blank" rel="noopener" class="social-btn">
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a id="about-instagram" href="#" target="_blank" rel="noopener" class="social-btn">
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+          </div>
+
+          <!-- Download Resume -->
+          <a class="btn-primary-glow resume-link" href="#" target="_blank">
+            <i class="bi bi-download"></i> Download Resume
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       TECHNOLOGIES / SKILLS
+  ════════════════════════════════════ -->
+  <section id="technologies">
+    <!-- Decorative orb -->
+    <div class="orb"
+      style="width:400px;height:400px;background:var(--blue-mid);top:20%;right:-15%;opacity:0.1;position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none;">
+    </div>
+
+    <div class="container position-relative">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <span class="section-tag"><i class="bi bi-cpu"></i> Tech Stack</span>
+        <h2 class="section-title">Skills &amp; <span>Technologies</span></h2>
+        <div class="divider-line mx-auto"></div>
+        <p class="section-subtitle mx-auto">
+          The tools and technologies I use to build scalable, modern applications.
+        </p>
+      </div>
+      <div class="tech-grid" id="tech-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       PROJECTS
+  ════════════════════════════════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <span class="section-tag"><i class="bi bi-layers"></i> Portfolio</span>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="divider-line mx-auto"></div>
+        <p class="section-subtitle mx-auto">
+          A selection of my most impactful and interesting projects across web and mobile.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-tabs justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="flutter">Flutter Apps</button>
+        <button class="filter-btn" data-filter="backend">Backend / API</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Detail Modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-label="Project Details">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="modal-img" src="" alt="" class="modal-img" />
+          <p id="modal-desc" style="color:var(--white-dim);line-height:1.8;margin-bottom:20px;"></p>
+          <div class="project-tags mb-3" id="modal-tags"></div>
+          <div class="project-links" id="modal-links"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════
+       EDUCATION
+  ════════════════════════════════════ -->
+  <section id="education">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-5 mb-lg-0" data-aos="fade-right">
+          <span class="section-tag"><i class="bi bi-mortarboard"></i> Education</span>
+          <h2 class="section-title">My Academic <span>Journey</span></h2>
+          <div class="divider-line"></div>
+          <p style="color:var(--white-dim);line-height:1.8;font-size:0.97rem;">
+            A strong academic foundation in Computer Applications, combined with relentless self-learning and hands-on
+            project building.
+          </p>
+          <div class="mt-4">
+            <div class="glass-card p-4 d-inline-block">
+              <div style="font-size:2rem;margin-bottom:8px;">🎓</div>
+              <div
+                style="font-family:var(--font-heading);font-size:1.5rem;font-weight:700;background:linear-gradient(135deg,var(--blue-light),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+                BCA</div>
+              <div style="color:var(--white-dim);font-size:0.85rem;margin-top:4px;">Bachelor of Computer Applications
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8" data-aos="fade-left">
+          <div class="timeline" id="education-timeline">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       CERTIFICATES
+  ════════════════════════════════════ -->
+  <section id="certificates">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <span class="section-tag"><i class="bi bi-patch-check"></i> Certifications</span>
+        <h2 class="section-title">Licenses &amp; <span>Certificates</span></h2>
+        <div class="divider-line mx-auto"></div>
+        <p class="section-subtitle mx-auto">
+          Continuously levelling up with industry-recognized certifications in cutting-edge technologies.
+        </p>
+      </div>
+      <div class="cert-grid" id="cert-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════ -->
+  <section id="contact">
+    <div class="orb"
+      style="width:350px;height:350px;background:var(--cyan);bottom:-10%;left:-10%;opacity:0.08;position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;">
+    </div>
+    <div class="container position-relative">
+
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-tag"><i class="bi bi-envelope"></i> Contact</span>
+        <h2 class="section-title">Let's <span>Work Together</span></h2>
+        <div class="divider-line mx-auto"></div>
+        <p class="section-subtitle mx-auto">
+          Have a project in mind? I'd love to hear about it. Drop a message and let's build something great!
+        </p>
+      </div>
+
+      <div class="row g-5">
+
+        <!-- Info Side -->
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="contact-card h-100">
+            <h3
+              style="font-family:var(--font-heading);font-size:1.4rem;font-weight:700;margin-bottom:28px;color:var(--white);">
+              Get In Touch
+            </h3>
+
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-telephone-fill text-white"></i></div>
+              <div>
+                <div class="contact-detail-label">Phone</div>
+                <div class="contact-detail-value" id="contact-phone"></div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-envelope-fill text-white"></i></div>
+              <div>
+                <div class="contact-detail-label">Email</div>
+                <div class="contact-detail-value" id="contact-email"></div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon"><i class="bi bi-geo-alt-fill text-white"></i></div>
+              <div>
+                <div class="contact-detail-label">Location</div>
+                <div class="contact-detail-value">India 🇮🇳</div>
+              </div>
+            </div>
+
+            <!-- Social -->
+            <div class="mt-4">
+              <p style="color:var(--white-dim);font-size:0.85rem;margin-bottom:14px;">Connect with me:</p>
+              <div class="d-flex gap-3">
+                <a id="link-github" href="#" target="_blank" rel="noopener" class="social-btn" title="GitHub">
+                  <i class="bi bi-github fs-5"></i>
+                </a>
+                <a id="link-linkedin" href="#" target="_blank" rel="noopener" class="social-btn" title="LinkedIn">
+                  <i class="bi bi-linkedin fs-5"></i>
+                </a>
+                <a id="link-instagram" href="#" target="_blank" rel="noopener" class="social-btn" title="Instagram">
+                  <i class="bi bi-instagram fs-5"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Availability Badge -->
+            <div class="mt-5 p-4 rounded-3"
+              style="background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2);">
+              <div class="d-flex align-items-center gap-3">
+                <div
+                  style="width:12px;height:12px;border-radius:50%;background:#34d399;box-shadow:0 0 10px #34d399;flex-shrink:0;animation:blink 1.4s infinite;">
+                </div>
+                <div>
+                  <div style="font-weight:700;color:#34d399;font-size:0.95rem;">Currently Available</div>
+                  <div style="font-size:0.82rem;color:var(--white-dim);margin-top:2px;">Open to freelance &amp;
+                    full-time opportunities</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="contact-card">
+            <h3
+              style="font-family:var(--font-heading);font-size:1.4rem;font-weight:700;margin-bottom:28px;color:var(--white);">
+              Send A Message
+            </h3>
+            <form id="contact-form" novalidate>
+              <div class="row g-3 mb-3">
+                <div class="col-sm-6">
+                  <label class="form-label" for="contact-name">Your Name</label>
+                  <input type="text" id="contact-name" class="form-control-glass" placeholder="John Doe" required />
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="contact-email-input">Email Address</label>
+                  <input type="email" id="contact-email-input" class="form-control-glass" placeholder="john@example.com"
+                    required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" class="form-control-glass"
+                  placeholder="Project Collaboration / Job Opportunity" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Message</label>
+                <textarea id="contact-message" class="form-control-glass"
+                  placeholder="Tell me about your project, timeline, and how I can help..." required></textarea>
+              </div>
+              <button type="submit" class="btn-primary-glow w-100 justify-content-center mt-2" style="padding:16px;">
+                <i class="bi bi-send-fill me-2"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-4">
+          <div class="footer-brand mb-2">&lt;Jenil /&gt;</div>
+          <p class="footer-text mb-0">MERN &amp; Flutter Developer<br />Building ideas into reality.</p>
+        </div>
+        <div class="col-md-4 text-md-center">
+          <div class="d-flex justify-content-md-center gap-3">
+            <a id="footer-github" href="#" target="_blank" class="social-btn" title="GitHub"><i
+                class="bi bi-github"></i></a>
+            <a id="footer-linkedin" href="#" target="_blank" class="social-btn" title="LinkedIn"><i
+                class="bi bi-linkedin"></i></a>
+            <a id="footer-instagram" href="#" target="_blank" class="social-btn" title="Instagram"><i
+                class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <nav class="d-flex flex-wrap gap-3 justify-content-md-end">
+            <a href="#about" class="footer-text text-decoration-none" style="font-size:0.88rem;">About</a>
+            <a href="#projects" class="footer-text text-decoration-none" style="font-size:0.88rem;">Projects</a>
+            <a href="#contact" class="footer-text text-decoration-none" style="font-size:0.88rem;">Contact</a>
+            <a href="#" class="footer-text text-decoration-none resume-link" style="font-size:0.88rem;">Resume</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-copy">
+        Designed &amp; Built with <span>♥</span> by <span>Jenil</span> &nbsp;·&nbsp;
+        © <span id="footer-year"></span> All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top -->
+  <button id="back-to-top" title="Back to top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Set footer year
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
